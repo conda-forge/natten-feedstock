@@ -23,7 +23,7 @@ docker_image:
 github_actions_labels:
 - depot-ubuntu-24.04-16
 libtorch:
-- '2.13'
+- '2.14'
 pin_run_as_build:
   python:
     min_pin: x.x
@@ -34,7 +34,7 @@ python:
 - 3.13.* *_cp313
 - 3.14.* *_cp314
 pytorch:
-- '2.13'
+- '2.14'
 target_platform:
 - linux-64
 zip_keys:

@@ -5,7 +5,8 @@ project(natten_extension LANGUAGES CXX)
 
 find_package(CUDAToolkit 12.0 REQUIRED)
 
-set(CMAKE_CXX_STANDARD 17)
+# PyTorch >=2.14 headers require C++20
+set(CMAKE_CXX_STANDARD 20)
 set(CMAKE_CXX_STANDARD_REQUIRED ON)
 
 add_library(natten MODULE ${NATTEN_CSRC}/natten.cpp)
